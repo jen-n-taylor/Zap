@@ -1,0 +1,139 @@
+
+// -------------- OUR TEAM --------------
+
+// HEADSHOTS 
+
+.ourTeam-imgs {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	padding: 80px 0 0 0;
+
+	@media all and (max-width : 768px) {
+		padding: 50px 0 0 0;
+	}
+
+	@media all and (max-width: 480px) {
+		justify-content: left;
+	}
+}
+
+figure.team-img-overlay {
+	position: relative;
+
+	@media all and (max-width: 700px) {
+		display: flex;
+		-webkit-display: flex;
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		align-items: center;
+	}
+}
+
+.team-img-overlay img {
+	
+	@media all and (max-width: 768px) {
+		height: 250px;
+	}
+
+	@media all and (max-width: 700px) {
+		height: 300px;	
+		padding: 0 0 15px 0;
+	}
+
+	@media all and (max-width: 480px) {
+		height: 200px;
+	}
+}
+
+.team-img-overlay figcaption {
+	position: absolute;
+	left: 0px;
+	bottom: 20px;
+	width: 100%;
+	padding: 20px 0 0 20px;
+	color: $highlight-color;
+	border-top: 2px solid $highlight-color;
+	font-family: $main-font;
+	font-size: 14px;
+	text-transform: uppercase;	
+	letter-spacing: 2px;
+
+	span {
+		font-family: $secondary-font;
+		font-size: 12px;
+		font-style: italic;
+		line-height: 125%;
+	}
+
+	@media all and (max-width : 768px) {
+		font-size: 12px;
+	}
+
+	@media all and (max-width : 700px) {
+		position: relative;
+		color: $primary-color;
+		font-size: 18px;
+	}
+}
+
+// CONTENT 
+
+.ourTeam-content {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-felx-direction: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	align-items: flex-end;
+	-webkit-align-items: flex-end;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	padding: 30px 0 0 0;
+
+	@media all and (max-width: 768px) {
+		text-align: center;
+		justify-content: center;
+	}
+}
+
+.content-text {
+	max-width: 770px;
+}
+
+.content-text p {
+	font-family: $main-font;
+	font-size: 14px;
+	font-weight: 400;
+	color: $secondary-color;
+	line-height: 200%;
+
+	margin: 0;
+	padding: 0;
+}
+
+// BUTTON
+
+.ourTeam-content button {
+	margin-bottom: 5px;
+
+	@media all and (max-width : 768px) {
+		
+		margin-top: 30px;
+
+	}
+}
+
+.ourTeam-content .button {
+	@media all and (max-width: 480px) {
+		margin: 0 auto;
+	}
+}

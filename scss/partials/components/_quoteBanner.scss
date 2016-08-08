@@ -1,0 +1,78 @@
+
+// -------------- QUOTE BANNER --------------
+
+.quoteBanner-container {
+	background-color: $accent-d;
+}
+
+.quoteBanner-wrapper {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between; 
+	align-items: center;
+	-webkit-align-items: center;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	@media all and (max-width: 1087px) {
+		text-align: center;
+		padding: 0 0 20px 0;
+	}
+}
+
+// QUOTE
+
+.quote-CTA {
+	color: $highlight-color;
+	font-family: $secondary-font;
+	font-size: 30px;
+	font-style: italic;
+	letter-spacing: 2px;
+	padding: 30px 10px;
+
+	span {
+		color: $tertiary-color;
+	}
+
+	@media all and (max-width: 1087px) {
+		margin: 0 auto;
+	}
+
+	@media all and (max-width : 768px) {
+		font-size: 22px;
+	}
+
+	@media all and (max-width: 480px) {
+		max-width: 300px;
+		font-size: 18px;
+	}
+}
+
+// BUTTON 
+
+.quoteBanner-button {
+	padding: 10px;
+
+	@media all and (max-width: 1087px) {
+		margin: 0 auto;
+	}
+}
+	
+.quoteBanner-wrapper button {
+	color: $highlight-color;
+	background-color: $tertiary-color;
+	border: 1px solid $tertiary-color;
+	transition: background-color 0.75s, border 0.75s, color 0.75s;
+
+	&:hover {
+		border: 1px solid $highlight-color;
+		background-color: $highlight-color;
+		color: $tertiary-color;
+	}
+}
+
+
+

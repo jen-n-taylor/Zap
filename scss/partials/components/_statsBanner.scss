@@ -1,0 +1,84 @@
+
+// -------------- STATS BANNER --------------
+
+.statsBanner-container {
+	background-color: $accent-d;
+	padding: 0 0 0 0;
+}
+
+.statsBanner-wrapper {
+	color: $highlight-color;
+	text-align: center;
+	padding: 95px 0 120px 0;
+
+	@media all and (max-width: 480px) {
+		padding: 60px 0 80px 0;
+	}
+
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	@media all and (max-width: 480px) {
+		max-width: 325px;
+	}
+}
+
+.statsBanner-stat {
+	position: relative;
+	width: 25%;
+}
+
+// NUMBER STYLING
+
+.stat-stat {
+	font-family: $main-font;
+	font-size: 48px;
+	font-weight: 400;
+	letter-spacing: 3px;
+
+	@media all and (max-width: 768px) {
+		font-size: 30px;
+	}
+
+	@media all and (max-width: 480px) {
+		font-size: 20px;
+	}
+}
+
+// TEXT STYLING 
+
+.stat-type {
+	color: $highlight-color;
+	letter-spacing: 2px;
+	font-weight: 300;
+	padding: 25px 0 0 0;
+
+	@media all and (max-width: 768px) {
+		font-size: 18px;
+	}
+
+	@media all and (max-width: 480px) {
+		font-size: 16px;
+	}
+}
+
+// LINE STYLING 
+
+.stat-type:after{
+	content: "";
+	height: 3px;
+	width: 50px; 
+	background-color: $secondary-color;
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+

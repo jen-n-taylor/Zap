@@ -1,0 +1,158 @@
+
+// -------------- BLOG --------------
+
+.blog-gallery {
+	padding: 80px 0 0 0;
+
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.blog-post {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	width: 50%;
+
+	@media all and (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+// ARROW FEATURE
+
+.arrow-box-left {
+	position: relative;
+	background: #eaeaea;
+}
+.arrow-box-left:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 234, 234, 0);
+	border-right-color: #eaeaea;
+	border-width: 30px;
+	margin-top: -30px;
+}
+
+.arrow-box-right {
+	position: relative;
+	background: #eaeaea;
+}
+.arrow-box-right:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 234, 234, 0);
+	border-left-color: #eaeaea;
+	border-width: 30px;
+	margin-top: -30px;
+}
+
+// BLOG IMAGES
+
+.blog-img {
+	width: 50%;
+	height: 330px;
+	background-position: center;
+	background-size: cover;
+}
+
+.blog-img1 {
+	background-image: url(../images/photos/blog1.png);	
+}
+
+.blog-img2 {
+	background-image: url(../images/photos/blog2.png);
+}
+
+.blog-img3 {
+	background-image: url(../images/photos/blog3.png);
+}
+
+.blog-img4 {
+	background-image: url(../images/photos/blog4.png);
+}
+
+// BLOG TEXT
+
+.blog-blurb {
+	width: 50%;
+	background: $accent-c;
+	padding: 50px 0 0 0;
+}
+
+.blog-category, .blog-blurb h5, .blog-blurb p, .blog-CTA {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.blog-category {
+	font-family: $secondary-font;
+	font-style: italic;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.blog-post-title {
+	margin: 0;
+	padding: 15px 0 0 0;
+
+	@media all and (max-width: 480px) {
+		font-size: 20px;
+	}
+}
+
+.blog-blurb p {
+	font-family: $main-font;
+	font-size: 14px;
+	font-weight: 400;
+	color: $p-color;
+	line-height: 200%;
+
+	@media all and (max-width: 890px) {
+		font-size: 12px;
+		padding: 15px 0 0 0;
+	}
+}
+
+.blog-CTA a {
+	text-decoration: none;
+	color: $primary-color;
+	cursor: pointer;
+	transition: color .5s;
+
+	&:hover {
+		color: $tertiary-color;
+	}
+}
+
+.blog-CTA {
+	font-family: $main-font;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 45px 0 0 0;
+	
+	i {
+		font-size: 14px;
+		padding: 0 0 0 15px;
+	}
+}
+

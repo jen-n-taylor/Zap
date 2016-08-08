@@ -1,0 +1,88 @@
+
+// -------------- CLIENTS --------------
+
+.clients-container {
+	padding: 90px 0 80px 0;
+
+	@media all and (max-width: 480px) {
+		padding: 70px 0 40px 0;
+	}
+}
+
+.clients-content {
+	text-align: center;
+}
+
+// IMAGES
+
+.clients-imgs {
+	margin: 0 auto;
+	padding: 50px 0;
+
+	@media all and (max-width: 480px) {
+		padding: 25px;
+	}
+}
+
+.clients-imgs img {
+	padding: 0 10px;
+
+	@media all and (max-width: 480px) {
+		padding: 0;
+	}
+}
+
+.clients-imgs .tablet-up {
+	
+	@media all and (max-width: 480px) {
+		display: none;
+	}
+}
+
+// TESTIMONIAL 
+
+.clients-feedback {
+	margin: 0 auto;
+	max-width: 740px;
+}
+
+.clients-feedback p {
+	line-height: 175%;
+	margin: 0;
+	padding-bottom: 35px;
+}
+
+// KEYLINE
+
+.clients-feedback .title-keyline {
+	max-width: 230px;
+	margin: 0 auto;
+}
+
+.clients-feedback h4 {
+	font-weight: 400;
+}
+
+.client-title {
+	font-family: $secondary-font;
+	font-size: 14px;
+	font-style: italic;
+	text-transform: uppercase;
+	color: $secondary-color;
+} 
+
+.clients-dot {
+	padding: 10px 0 0 0;
+	font-size: 26px;
+	color: $accent-a;
+}
+
+
+.clients-dot span {
+	transition: color 0.75s;
+	cursor: pointer;
+
+	&:hover {
+		color: $tertiary-color;
+	}
+}

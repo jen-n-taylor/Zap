@@ -1,0 +1,125 @@
+
+// -------------- ABOUT US --------------
+
+.aboutUs-container {
+	padding: 120px 0 0 0;
+
+	@media all and (max-width: 768px) {
+		padding: 70px 0 0 0;
+	}
+}
+
+.aboutUs-wrapper {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
+// VERTICAL LOGO
+
+.aboutUs-logo {
+	padding: 0 10%;
+
+	@media all and (max-width : 768px) {
+		display: none;
+	}
+}
+
+// MAIN CONTENT
+
+.aboutUs-content {
+	padding: 0 0 0 30px;
+
+	@media all and (max-width : 768px) {
+		padding: 0 10px;
+	}
+}
+
+.aboutUs-content h3 {
+	padding: 5px 0 0 0;
+}
+
+.aboutUs-content p {
+	padding: 0 65px 20px 0;
+	
+	@media all and (max-width: 480px) {
+		padding: 0 0 20px 0;
+	}
+}
+
+// LIST OF SERVICES
+
+.aboutUs-services-list {
+	display: flex;
+	-webkit-display: flex; 
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	list-style-type: none;
+	padding: 0;
+
+	@media all and (max-width: 480px) {
+		display: none;
+	}
+}
+
+.aboutUs-services-list li {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	align-items: center;
+	-webkit-align-items: center;
+
+	font-family: $main-font;
+	padding-bottom: 15px;
+}
+
+.service-img {
+	display: flex;
+	-webkit-display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+
+	border: 2px solid $accent-a;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	transition: all 0.5s;
+
+	&:hover {
+		border: 2px solid $tertiary-color;
+		transform: rotateY(180deg);
+	}
+}
+
+.service-caption {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0 0 0 25px;
+}
+
+// CTA BUTTON
+
+.aboutUs-button-container {
+	@media all and (max-width: 480px) {
+		text-align: center;
+	}
+}
+
+.aboutUs-button {
+	margin: 20px 0 0 0;
+	color: $primary-color;
+	font-style: normal;
+
+	@media all and (max-width : 480px) {
+		margin: 0;
+	}
+}

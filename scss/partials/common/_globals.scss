@@ -1,0 +1,202 @@
+
+// -------------- GLOBALS --------------
+
+// FONTS -------------------------------
+
+// Montserrat
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+// Crimson Text
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600italic,600,700);
+
+
+$main-font: 'Montserrat', sans-serif;
+$secondary-font: 'Crimson Text', serif;
+
+// COLORS ------------------------------
+
+
+$primary-color: rgb(20,20,20); 		//black
+$secondary-color: rgb(144,144,144); 	//grey
+$tertiary-color: rgb(238,176,19); 		//yellow
+$p-color: rgb(111,111,111);				// dark grey
+$highlight-color: rgb(255,255,255);		//white
+
+$accent-a: rgb(217,217,217);			//light grey
+$accent-b: rgb(208,208,208); 			// keyline grey
+$accent-c: rgb(236,236,236);			// border grey
+$accent-d: rgb(47,47,47);				// background color
+$accent-e: rgb(28,28,28); 				// background color
+$accent-f: rgb(177,177,177); //contact
+
+
+// CONTAINER ---------------------------
+
+.container {
+	padding: 90px 0 0 0;
+
+	@media all and (max-width: 768px) {
+		padding: 70px 0 0 0;
+	}
+}
+
+// WRAPPER -----------------------------
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+
+	@media all and (max-width : 1169px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media all and (max-width : 768px){
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+
+// HEADERS -----------------------------
+
+h1 {
+	font-family: $main-font;
+	font-size: 90px;
+	font-weight: 600;
+	letter-spacing: -7px;
+	color: $highlight-color;
+	margin: 0;
+}
+
+h2 {
+	font-family: $main-font;
+	font-size: 18px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: $main-font;
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h4 {
+	font-family: $main-font;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h5 {
+	font-family: $main-font;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 12px;
+	font-family: $main-font;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+// TYPOGRAPHY --------------------------
+
+.subtitle {
+	font-size: 18px;
+	font-family: $secondary-font;
+	font-style: italic;
+	color: $secondary-color;
+}
+
+.paragraph {
+	font-family: $main-font;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 225%;
+
+	color: $p-color;
+}
+
+// BUTTONS ----------------------------
+
+.button--big {
+	font-family: $main-font;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-size: 14px;
+	padding: 20px 30px;
+	background: $highlight-color;
+	border: 1px solid black;
+	transition: border 0.75s;
+
+	&:hover {
+		border: 1px solid $tertiary-color;
+	}
+}
+
+.button--med {
+	font-family: $main-font;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 12px;
+	padding: 15px 35px;
+	transition: all 0.75s;
+}
+
+.button--small {
+	font-family: $main-font;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 12px;
+	padding: 15px 45px;
+	transition: all 0.75s;
+}
+
+// TITLE -----------------------------
+
+.title {
+	max-width: 230px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title h2 {
+	padding: 0 0 5px 0;
+}
+
+.title-keyline {
+	position: relative;
+}
+
+.keyline::after {
+	content: "";
+	position: absolute;
+	background-color: $accent-b;
+	height: 1px;
+	width: 80px;
+	top: 10px;
+	left: 0px;
+}
+
+.keyline::before {
+	content: "";
+	position: absolute;
+	background-color: $accent-b;
+	height: 1px;
+	width: 80px;
+	top: 10px;
+	right: 0px;
+}
+
+.title .subtitle {
+	padding: 10px 0 0 0;
+}

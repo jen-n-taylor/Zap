@@ -1,0 +1,6 @@
+.aboutUs-wrapper {
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}

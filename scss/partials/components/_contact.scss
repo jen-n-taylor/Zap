@@ -1,0 +1,199 @@
+
+// -------------- CONTACT --------------
+
+.contact-wrapper {
+	margin: 90px 0 0 0;
+	background-color: $accent-e;
+
+	@media all and (max-width : 768px) {
+		padding: 0 20px ;
+		margin: 60px 0 0 0;
+	}
+}
+
+.contact-info {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between; 
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	
+	padding-top: 95px;
+	color: $accent-f;
+
+	@media all and (max-width : 768px) {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		max-width: 300px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@media all and (max-width: 480px) {
+		padding-bottom: 30px;
+	}
+}
+
+.contact-info a {
+	text-decoration: none;
+	color: $accent-f;
+}
+
+.contact-address {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between; 
+	align-items: center;
+	-webkit-align-items: center;
+
+	@media all and (max-width : 768px) {
+		justify-content: flex-start;
+		padding-bottom: 20px;
+	}
+}
+
+// ICONS
+
+.contact-icon {
+	border: 1px solid $accent-f;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin: 0 30px 0 0;
+	min-width: 102px;
+
+	display: flex;
+	-webkit-display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.contact-address i {
+	font-size: 50px;
+	color: $tertiary-color;
+}
+
+// CONTACT INFO COPY
+
+.content-content {
+	font-family: $secondary-font;
+	line-height: 200%;
+}
+
+.content-content a {
+	font-style: italic;
+}
+
+// FORM 
+
+.contact-form {
+	padding-top: 95px;
+	padding-bottom: 95px;
+
+	@media all and (max-width: 768px) {
+		padding-top: 0
+	}
+	
+	@media all and (max-width: 480px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+// for accessibility & screen readers: 
+.contact-forms label {
+	visibility: hidden;
+	width: 1px;
+}
+
+.contact-inputs {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	margin: 0 0 60px 0;
+
+	@media all and (max-width: 480px) {
+		margin: 0;
+	}
+}
+
+.one-third {
+	width: 31%;
+
+	@media all and (max-width: 480px) {
+		width: 100%;
+		display: block;
+		margin: 0 0 30px 0;
+	}
+}
+
+.full-width {
+	width: 100%;
+	margin: 0;
+}
+
+.one-third input, .full-width textarea {
+	width: 100%;
+}
+
+input, textarea {
+	background-color: transparent;
+	font-family: $secondary-font;
+	font-style: italic;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: $highlight-color;
+	border: none;
+}
+
+input[type="text"] {
+	font-family: $secondary-font;
+	font-style: normal;
+	font-size: 14px;
+	color: $highlight-color;
+}
+
+.one-third, .full-width {
+	border-bottom: 1px solid $accent-f;
+}
+
+// BUTTON 
+
+.submit-button button {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 6px;
+	background-color: transparent;
+	border: 1px solid $highlight-color;
+	color: $highlight-color;
+	margin: 45px 0 0 0;
+	transition: all 0.7s;
+
+	&:hover {
+		color: $primary-color;
+		background-color: $highlight-color;
+	}
+}
+
+.submit-button {
+	display: flex;
+	-webkit-display: flex;
+	justify-content: flex-end;
+
+	@media all and (max-width: 480px) {
+		justify-content: center;
+	}
+}
